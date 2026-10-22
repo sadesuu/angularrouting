@@ -1,0 +1,19 @@
+<h1>Tabla del {{ numero }}</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operación</th>
+      <th>Resultado</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    @for (resultado of result; track $index) {
+      <tr>
+        <td>{{ numero }} x {{ $index + 1 }}</td>
+        <td>{{ resultado }}</td>
+      </tr>
+    }
+  </tbody>
+</table>
